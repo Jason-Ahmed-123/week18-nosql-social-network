@@ -1,0 +1,25 @@
+{
+  "name": "week18-nosql-social-network",
+  "version": "1.0.0",
+  "description": "## Purpose An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.28.0",
+    "mongoose": "^5.10.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jason-Ahmed-123/week18-nosql-social-network.git"
+  },
+  "author": "Jason Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jason-Ahmed-123/week18-nosql-social-network/issues"
+  },
+  "homepage": "https://github.com/Jason-Ahmed-123/week18-nosql-social-network#readme"
+}
