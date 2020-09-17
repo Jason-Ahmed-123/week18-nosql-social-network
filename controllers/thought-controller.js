@@ -45,19 +45,15 @@ const thoughtController = {
     },
 
     // Create thought
-    createThought({
-        params,
-        body
-    }, res) {
-        Thought.create(body)
-            .then(({
-                _id
-            }) => {
+    createThought(
+        req, res) {
+        Thought.create(req.body)
+            .then((data) => {
                 return User.findOneAndUpdate({
-                    _id: params.userId
+                    _id: req.body.userId
                 }, {
                     $push: {
-                        thoughts: _id
+                        thoughts: data._id
                     }
                 }, {
                     new: true
