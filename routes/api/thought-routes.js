@@ -22,7 +22,7 @@ router
     .get(getThoughtById)
     // PUT to update a thought by its _id
     .put(updateThought)
-    DELETE to remove a thought by its _id
+    // DELETE to remove a thought by its _id
     .delete(deleteThought)
 
 router
