@@ -1,3 +1,4 @@
+// Used the "Pizza Hunt" module as guide.
 const express = require('express');
 
 const app = express();
@@ -17,7 +18,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/pizza-hunt', {
   useUnifiedTopology: true
 });
 
-// Use this to log mongo queries being executed!
 mongoose.set('debug', true);
 
 app.listen(PORT, () => console.log(`🌍 Connected on localhost:${PORT}`));

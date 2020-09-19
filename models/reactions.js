@@ -1,39 +1,40 @@
 // dependencies:
-const { Schema, model, Types } = require('mongoose');
+const {
+    Schema,
+    model,
+    Types
+} = require('mongoose');
 // Moment JS will track time:
 const moment = require('moment');
 
 
 // Reaction (Schema Only!):
-const ReactionSchema = new Schema(
-    {
-      // Use Mongoose's ObjectId data type
-      reactionId: {
+const ReactionSchema = new Schema({
+    // Use Mongoose's ObjectId data type
+    reactionId: {
         type: Schema.Types.ObjectId,
         default: () => new Types.ObjectId()
-      },
-      reactionBody: {
+    },
+    reactionBody: {
         type: String,
         required: true,
         maxlength: 280
-      },
-      username: {
+    },
+    username: {
         type: String,
         required: true
-      },
-      createdAt: {
+    },
+    createdAt: {
         type: Date,
         default: Date.now,
         get: createdAtVal => moment(createdAtVal).format('MMM DD, YYYY [at] hh:mm a')
-      }
-    },
-    {
-      toJSON: {
-        getters: true
-      }
     }
-  );
+}, {
+    toJSON: {
+        getters: true
+    }
+});
 
 
-  // Export Reaction model schema
+// Export Reaction model schema
 module.exports = ReactionSchema;
