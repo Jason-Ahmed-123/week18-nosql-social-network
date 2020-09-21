@@ -10,7 +10,7 @@ An API for a social network web application where users can share their thoughts
 * Moment.js
 
 ## Link to video walkthrough
-to come...
+https://drive.google.com/file/d/1tASna5CLkFjZ-DEnO5OW-AkK0P23Lkd3/view?usp=sharing
 
 ## Contribution
 Made by Jason Ahmed
